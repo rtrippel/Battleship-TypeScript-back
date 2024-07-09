@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  my-app:
+    image: my-app:latest
+    platform: linux/amd64
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
